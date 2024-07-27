@@ -1,0 +1,70 @@
+{
+  "suggest": {
+    "noselect": false,
+    "enablePreselect": false,
+    "triggerAfterInsertEnter": true,
+    "timeout": 5000,
+    "enablePreview": true,
+    "floatEnable": true,
+    "detailField": "preview",
+    "snippetIndicator": "🧩"
+  },
+  "diagnostic": {
+    "displayByAle": false,
+    "errorSign": "❌",
+    "warningSign": "⚠️",
+    "infoSign": "ℹ️",
+    "hintSign": "💡",
+    "virtualText": true,
+    "virtualTextPrefix": "❯❯"
+  },
+  "codeAction": {
+    "showDocumentation": {
+      "enable": true
+    }
+  },
+  "completion": {
+    "triggerAfterInsertEnter": true,
+    "minTriggerInputLength": 2,
+    "maxItemCount": 50
+  },
+  "signature": {
+    "enable": true,
+    "target": "float"
+  },
+  "languageserver": {
+    "typescript": {
+      "enable": true,
+      "filetypes": ["typescript", "typescriptreact", "typescript.tsx"]
+    }
+  },
+  "biome": {
+    "enabled": true,
+    "lspBin": "biome",
+    "requireConfiguration": false,
+    "enableFormat": true,
+    "enableLint": true
+  },
+  "sources": [
+    {"name": "coc-snippets"},
+    {"name": "buffer"},
+    {"name": "file"},
+    {"name": "path"}
+  ],
+  "status": {
+    "enable": true,
+    "separator": " "
+  },
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "typescriptreact", "json", "javascriptreact", "typescript.tsx"],
+  "coc.preferences.formatOnType": true,
+  "format": {
+    "javascriptSortImports": true,
+    "typescriptSortImports": true
+  },
+  "list": {
+    "indicator": ">",
+    "nextKeymap": "<C-j>",
+    "previousKeymap": "<C-k>"
+  }
+}
